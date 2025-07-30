@@ -1,0 +1,467 @@
+:root {
+    --side-bar-bg-color: #1e1e1e;
+    /* 侧边栏深色背景 */
+    --control-text-color: #d4d4d4;
+    /* 控件浅色文字 */
+}
+
+@include-when-export url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext');
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #1E1E1E;
+    /* 整体深色背景 */
+    color: #d4d4d4;
+    /* 浅色文字 */
+}
+
+body {
+    font-family: "Monaco", "苹方-简";
+    line-height: 1.6;
+    background-color: #1E1E1E;
+    /* 整体深色背景 */
+    color: #d4d4d4;
+    /* 浅色文字 */
+}
+
+#write {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 100px;
+    font-family: "Monaco", "苹方-简";
+    background-color: #1E1E1E;
+    /* 编辑区域深色背景 */
+    color: #d4d4d4;
+    /* 浅色文字 */
+}
+
+.ty-input:empty:after {
+    font-family: "Monaco", "苹方-简";
+}
+
+/* 引入图片 */
+#write img {
+    border-radius: 24px;
+    margin: 0px;
+}
+
+.cm-s-inner .cm-comment,
+.cm-s-inner.cm-comment {
+    color: #638853;
+}
+
+.CodeMirror-lines {
+    font-size: 16;
+}
+
+#write p a::before {
+    content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath  d='M477.934459 330.486594A50.844091 50.844091 0 0 1 406.752731 258.796425L512 152.532274a254.220457 254.220457 0 0 1 359.467726 359.467726L762.66137 618.772592a50.844091 50.844091 0 1 1-71.690168-71.690169l106.772591-106.772592a152.532274 152.532274 0 0 0-215.578947-215.578947z m70.164846 361.501489A50.844091 50.844091 0 1 1 619.789474 762.66137l-107.281033 107.281033A254.220457 254.220457 0 0 1 152.532274 512L259.813307 406.752731a50.844091 50.844091 0 1 1 72.19861 69.656405l-107.789474 107.281033a152.532274 152.532274 0 0 0 215.578947 215.578947z m-126.601788-16.77855a50.844091 50.844091 0 1 1-71.690168-71.690169l251.678252-251.678252a50.844091 50.844091 0 0 1 71.690169 71.690169z'/%3E%3C/svg%3E");
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+    vertical-align: sub;
+}
+
+.cm-s-inner .cm-builtin {
+    color: #c35b15;
+}
+
+.cm-s-inner .cm-operator {
+    color: #f1a5c1;
+}
+
+
+@media only screen and (min-width: 1400px) {
+    #write {
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #write {
+        max-width: 1200px;
+    }
+}
+
+#write>ul:first-child,
+#write>ol:first-child {
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+
+h1 tt,
+h1 code {
+    font-size: inherit;
+    font-family: "Monaco", "苹方-简";
+}
+
+h2 tt,
+h2 code {
+    font-size: inherit;
+    font-family: "Monaco", "苹方-简";
+}
+
+h3 tt,
+h3 code {
+    font-size: inherit;
+    font-family: "Monaco", "苹方-简";
+}
+
+h4 tt,
+h4 code {
+    font-size: inherit;
+    font-family: "Monaco", "苹方-简";
+}
+
+h5 tt,
+h5 code {
+    font-size: inherit;
+    font-family: "Monaco", "苹方-简";
+}
+
+h6 tt,
+h6 code {
+    font-size: inherit;
+    font-family: "Monaco", "苹方-简";
+}
+
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #555;
+    font-family: "Monaco", "苹方-简";
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #555;
+    font-family: "Monaco", "苹方-简";
+}
+
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+    font-family: "Monaco", "苹方-简";
+}
+
+h4 {
+    font-size: 1.25em;
+    font-family: "Monaco", "苹方-简";
+}
+
+h5 {
+    font-size: 1em;
+    font-family: "Monaco", "苹方-简";
+}
+
+h6 {
+    font-size: 1em;
+    color: #777;
+    font-family: "Monaco", "苹方-简";
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
+    margin: 0.8em 0;
+}
+
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #444;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
+blockquote {
+    border-left: 4px solid #444;
+    padding: 0 15px;
+    color: #777777;
+}
+
+blockquote blockquote {
+    padding-right: 0;
+}
+
+table {
+    padding: 0;
+    word-break: initial;
+}
+
+table tr {
+    border: 1px solid #444;
+    margin: 0;
+    padding: 0;
+}
+
+table tr:nth-child(2n),
+thead {
+    background-color: #FFFBE2;
+}
+
+table th {
+    font-weight: bold;
+    border: 1px solid #444;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table td {
+    border: 1px solid #444;
+    margin: 0;
+    padding: 6px 13px;
+}
+
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+    font-family: "Monaco", "苹方-简";
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #444;
+    background-color: #FFFBE2;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #FFFBE2;
+    padding: 2px;
+    color: #cc3838;
+    font-family: "Monaco", "苹方-简";
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item>input {
+    margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+    background-color: #FFFBE2;
+    border-radius: 14px;
+}
+
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #1e1e1e;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+    bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #1e1e1e;
+}
+
+#write>h3.md-focus:before {
+    left: -1.5625rem;
+    top: .375rem;
+}
+
+#write>h4.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write>h5.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+#write>h6.md-focus:before {
+    left: -1.5625rem;
+    top: .285714286rem;
+}
+
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #FFFBE2;
+}
+
+#typora-quick-open-item {
+    background-color: #444;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state {
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #2a2a2a;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #1E1E1E;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #1E1E1E;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));
+}
